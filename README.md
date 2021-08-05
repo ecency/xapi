@@ -1,12 +1,13 @@
-# REST API
+# REST API Bridge
 
 ## Usage: 
 
 You can use Hive blockchain API methods this way:
 
-https://xapi.esteem.app/getAccounts?names[]=ned  
-https://xapi.esteem.app/getState?path=/trending  
-https://xapi.esteem.app/getDiscussionsByHot?query={"tag":"photography","limit":"10"}  
+https://xapi.ecency.com/getAccounts?names[]=demo  
+https://xapi.ecency.com/get_accounts?names[]=demo  
+https://xapi.ecency.com/getState?path=/trending  
+https://xapi.ecency.com/getDiscussionsByHot?query={"tag":"photography","limit":"10"}  
 
 ## API UI 
 

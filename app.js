@@ -5,20 +5,18 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const http = require('http'),
   https = require('https');
-const hive = require('@hiveio/hive-js');
+
 http.globalAgent.maxSockets = Infinity;
 https.globalAgent.maxSockets = Infinity;
 
 const app = express();
 
-if (process.env.HIVE_URL) {
-  hive.api.setOptions({ url: process.env.HIVE_URL });
-}
-
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
+app.enable('etag');
+app.set('etag', 'strong')
 
 // view engine setup
 const hbs = require('hbs');
