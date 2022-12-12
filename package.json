@@ -11,7 +11,7 @@
     "cors": "^2.8.4",
     "debug": "^3.1.0",
     "decamelize": "^2.0.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "get-parameter-names": "^0.3.0",
     "hbs": "^4.1.0",
     "lodash": "^4.17.21",
